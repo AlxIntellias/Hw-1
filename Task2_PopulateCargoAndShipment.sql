@@ -9,7 +9,7 @@
 DECLARE @CounterContact INT = 0;
 WHILE @CounterContact < 1000
 BEGIN
-    INSERT INTO Contact (FirstName, LastName, CellPhone)
+    INSERT INTO [Contact] (FirstName, LastName, CellPhone)
     SELECT 
         LEFT(CONVERT(NVARCHAR(50), NEWID()), 5),
         LEFT(CONVERT(NVARCHAR(50), NEWID()), 5),
